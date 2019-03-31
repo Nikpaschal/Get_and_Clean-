@@ -21,14 +21,16 @@ This is necessary because otherwise every time the scripts runs it will download
 
 * Next step reads txt files in the raw daya folder and creates data frames (except from the inertia signal data). 
 These data frames are named: 
-  	activity 
-  	features 
-  	Subject_ID_test 
-  	Subject_ID_train 
-  	test_x 
-  	train_x 
-  	Activity_ID_test 
-  	Activity_ID_train 
+  	activity (6 obs., 2 variables), ID: 1.WALKING, 2.WALKING_UP, 3.WALKING_DOWN, 4.SITTING, 5.STANDING, 6.LAYING.
+  	features (561 obs., 2 variables) accelerometer,gyroscope 3-axial signals tAcc(XYZ), tGyro(XYZ)
+  	Subject_ID_test (2947 obs., 1 variable), 
+  	Subject_ID_train (7352 obs., 1 variable), 
+  	test_x (2947 obs., 561 variables), 
+  	train_x (7352 obs., 561 variables)
+  	Activity_ID_test (2947 obs., 1 variable), test data of activity ID labels
+  	Activity_ID_train (7352 obs., 1 variable), train data of activity ID labels
+
+(Note: obs -> rows and variables -> columns)
 
 
 * The next 5 steps follow the course project description
